@@ -23,4 +23,4 @@ git add .
 git commit -m "Database"
 
 # Step 5: Push the backup to GitHub
-git push --all
+git push origin main
