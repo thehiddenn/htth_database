@@ -7,7 +7,7 @@ $db_name = "htth"
 # Backup destination
 $backup_path = "C:\Users\Administrator\Desktop\server\Backup"
 $backup_file = "$backup_path\db_backup.sql"
-$backup_zip = "$backup_path\db_backup.gz"
+$backup_zip = "$backup_path\db_backup.sql.gz"
 
 # Git repository details
 $git_repo = "C:\Users\Administrator\Desktop\server\Backup"
