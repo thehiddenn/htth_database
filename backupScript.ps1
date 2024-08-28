@@ -14,7 +14,8 @@ $git_repo = "C:\Users\Administrator\Desktop\server\Backup"
 
 # Step 1: Export the database 
 #$mysqldump = "mysqldump --default-character-set=utf8mb4 --user=$user --password=$password --host=$db_host $db_name > $backup_file"
-$mysqldump = "mysqldump --default-character-set=utf8mb4 --user=$user --password=$password --host=$db_host $db_name | gzip > $backup_zip"
+#$mysqldump = "mysqldump --default-character-set=utf8mb4 --user=$user --password=$password --host=$db_host $db_name | gzip > $backup_zip"
+$mysqldump = "mysqldump --default-character-set=utf8mb4 --user=$user --password=$password --host=$db_host $db_name | tar > $backup_zip"
 Invoke-Expression $mysqldump
 
 # Step 2: Move to the Git repository directory
