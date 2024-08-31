@@ -13,8 +13,8 @@ $backup_zip = "$backup_path\db_htth.sql.gz"
 $git_repo = "C:\Users\Administrator\Desktop\server\Backup"
 
 # Step 1: Export the database 
-#$mysqldump = "mysqldump --default-character-set=utf8mb4 --user=$user --password=$password --host=$db_host $db_name > $backup_file"
-$mysqldump = "mysqldump --default-character-set=utf8mb4 --skip-comments --user=$user --password=$password --host=$db_host $db_name | 7z > $backup_zip"
+$mysqldump = "mysqldump --default-character-set=utf8mb4 --user=$user --password=$password --host=$db_host $db_name > $backup_file"
+# $mysqldump = "mysqldump --default-character-set=utf8mb4 --skip-comments --user=$user --password=$password --host=$db_host $db_name | 7z > $backup_zip"
 # $mysqldump = "mysqldump --default-character-set=utf8mb4 --user=$user --password=$password --host=$db_host $db_name | tar > $backup_zip"
 Invoke-Expression $mysqldump
 
