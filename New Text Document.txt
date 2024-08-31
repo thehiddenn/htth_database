@@ -1,0 +1,2 @@
+mysqldump --skip-comments --single-transaction -u root htth_v3 | 7z > db_htth.sql.gz
+
